@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog SYSTEM "catalog.dtd">
+
+<catalog>
+    <!-- List of actors -->
+    <llista_actors>
+        <actor id="A1">
+            <nom>John Doe</nom>
+            <edat>45</edat>
+        </actor>
+        <actor id="A2">
+            <nom>Jane Smith</nom>
+        </actor>
+        <actor id="A3">
+            <nom>Mike Johnson</nom>
+            <edat>32</edat>
+        </actor>
+    </llista_actors>
+
+    <!-- List of movies -->
+    <llista_pelicules>
+        <pelicula id="P1">
+            <titol idioma="English">The Great Escape</titol>
+            <director>John Director</director>
+            <any>1963</any>
+            <actors>
+                <actor_ref ref="A1"/>
+                <actor_ref ref="A2"/>
+            </actors>
+        </pelicula>
+        <pelicula id="P2">
+            <titol idioma="Spanish">La Gran Aventura</titol>
+            <director>Maria Lopez</director>
+            <any>2020</any>
+            <actors>
+                <actor_ref ref="A3"/>
+            </actors>
+        </pelicula>
+        <pelicula id="P3">
+            <titol idioma="French">L'Évasion</titol>
+            <director>Jean Dupont</director>
+            <any>1999</any>
+            <actors>
+                <actor_ref ref="A1"/>
+                <actor_ref ref="A3"/>
+            </actors>
+        </pelicula>
+    </llista_pelicules>
+
+    <!-- Movie recommendations -->
+    <llista_recomanacions_pelicules>
+        <recomanacio ref="P1"/>
+        <recomanacio ref="P2"/>
+        <recomanacio ref="P3"/>
+    </llista_recomanacions_pelicules>
+</catalog>
